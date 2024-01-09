@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barger Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="my-10">
+
+    <!-- header starts from here -->
+    <header class="max-w-5xl mx-auto text-center space-y-5">
+        <h1 class="text-4xl font-semibold text-red-500">CHICKEN CRISPER&copy; CONBOS</h1>
+        <p>FInd everything from our Big Mouth Burgers,always sizzling.Full-on Fajitas and our famous Chicken Crisper.
+        </p>
+    </header>
+
+    <!-- main section starts from here -->
+    <main class="max-w-6xl mx-auto my-10">
+        <div class="flex flex-row gap-4">
+            <!-- items section -->
+            <div class="grid grid-cols-3 gap-3 h-60 mt-16 w-9/12">
+                <!-- first card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="https://i.ibb.co/TbQGmXq/burger-0.jpg" alt="Shoes" />
+                    </figure>
+                    <div id="cheese-div" class="card-body">
+                        <h2 class="card-title">Cheese Barger</h2>
+                        <p><span id="cheese-price" class="font-bold">150</span>$/each</p>
+                        <!-- <p>Barger typically features a seasoned beef patty served in a soft bun, often accompanied by cheese, lettuce, tomato, and condiments.</p> -->
+                        <div class="card-actions">
+                            <button onclick="addToCart(this)" class="w-full btn btn-accent">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="https://i.ibb.co/TbQGmXq/burger-0.jpg" alt="Shoes" />
+                    </figure>
+                    <div id="chicken-div" class="card-body">
+                        <h2 class="card-title">Chicken Barger</h2>
+                        <p><span id="chicken-price" class="font-bold">200</span>$/each</p>
+                        <!-- <p>Barger typically features a seasoned beef patty served in a soft bun, often accompanied by cheese, lettuce, tomato, and condiments.</p> -->
+                        <div class="card-actions">
+                            <button onclick="addToCart(this)" class="w-full btn btn-accent">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card bg-base-100 shadow-xl">
+                    <figure><img src="https://i.ibb.co/TbQGmXq/burger-0.jpg" alt="Shoes" />
+                    </figure>
+                    <div id="masala-div" class="card-body">
+                        <h2 class="card-title">Masala Barger</h2>
+                        <p><span id="masala-price" class="font-bold">100</span>$/each</p>
+                        <!-- <p>Barger typically features a seasoned beef patty served in a soft bun, often accompanied by cheese, lettuce, tomato, and condiments.</p> -->
+                        <div class="card-actions">
+                            <button onclick="addToCart(this)" class="w-full btn btn-accent">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart section -->
+            <div id="cart-container" class="w-3/12 h-screen rounded-lg bg-sky-200">
+                <div class="flex justify-center">
+                    <div class="badge my-3 badge-secondary">0</div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="scripts/cart.js"></script>
+</body>
+
+</html>
